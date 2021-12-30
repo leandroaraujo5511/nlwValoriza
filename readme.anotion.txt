@@ -1,66 +1,23 @@
-/**
- * GET      => Busca de uma informação  
- * POST     => Inserir (Criar) uma informação
- * PUT      => ALterar uma informação
- * DELETE   => Excluir um Dado 
- * PATCH    => Alterar uma informação espeficica
- */
+NLW Valoriza
+Regras
+Cadastro de usuário
 
+[ x ] Não é permitido cadastrar mais de um usuário com o mesmo e-mail
 
-/***
- *                       Tipos de paramentros 
- * 
- * Routes params    => http://localhost:3000/produtos/78945685212385
- *      >> Paramentros obrigatorios.
- * 
- * Query params     => http://localhost:3000/produtos?name=teclado&marca=logitec
- *      >> Paramentros não obrigatorios.
- *      >> Não é explicito na propria rota.
- *           
- * Body params      => {
- *      "Name": "Teclado",
- *      "Marca": "Logitec"
- * }
- *      >> Paramentros contidos no corpo da requisisão.
- *      >> Utilizados em metodos PUT, POST e PATCH
- * 
- */
+[ x ] Não é permitido cadastrar usuário sem e-mail
 
+Cadastro de TAG
 
-/***
- *                         Banco de Dados
- * 
- * Utilizando drive do banco de dados...
- * Mais baixo Nivel
- * Conhecimento basico de SQL
- * Maior trabalho ao migrar o banco de dados da aplicação 
- * 
- * 
- * Query Builder 
- * * Knexjs, 
- * 
- * ORM
- * Framworks que ajuda no mapeamento da entidade e objeto. 
- * 
- * 
- */
+[ x ] Não é permitido cadastrar tag sem nome
 
-app.get("/test", (request, response) => {
-    //Request  => Entrando
-    //Response => Saindo
-    
-    return response.send("Olá NLW");
-});
+[ x ] Não é permitido cadastrar mais de uma tag com o mesmo nome
 
-app.post("/test-post",(request, response)=>{
-    return response.send("Olá NLW Metodo post");
-    
-});
+[ x ] Não é permitido o cadastro por usuários que não sejam administradores
 
-// http://localhost:3000
+Cadastro de elogios
 
+[ ] Não é permitido um usuário cadastrar um elogio para si
 
-/**
- * 
- * 
- */
+[ ] Não é permitido cadastrar elogios para usuários inválidos
+
+[ ] O usuário precisa estar autenticado na aplicação
