@@ -1,6 +1,7 @@
-# NLW Valoriza
-Projeto desenvolvido na NLW 06
-
+<h1 align="center">NLW Valoriza<h1>
+<p align= "center">Projeto desenvolvido na NLW 06<p>
+  
+  
 
 ## ✨ Tecnologias
 
